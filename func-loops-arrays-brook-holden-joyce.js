@@ -2,64 +2,86 @@
 // Don't forget to pseudo code.
 
 // Write a function that takes in an array of numbers and returns an array with all numbers multiplied by 3.
- var testArr1 = [3, 9, 15, 4, 10];
+//  var testArr1 = [3, 9, 15, 4, 10];
 
-// psuedo code
-// function: 
-//
-
-
-const multiplier = (array) => {
-    var newArray = []
-    for(let i = 0; i < array.length; i++) {
-        newArray[i]=array[i] *3
-    }
-     return newArray
-}
-
-console.log(multiplier(testArr1))
+// // psuedo code
+// // function: 
+// //
 
 
-// // --> [9, 27, 45, 12, 30]
-// Write a function that takes in an array of numbers and returns a new array with only odd numbers.
-var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13];
+// const multiplier = (array) => {
+//     var newArray = []
+//     for(let i = 0; i < array.length; i++) {
+//         newArray[i]=array[i] *3
+//     }
+//      return newArray
+// }
 
-//psuedo code
-//function: Declare a function name oddNumber
-//parameter: array1
-//for loop: modulo 
-//expected output: [0, -7, 3, 13]
+// console.log(multiplier(testArr1))
 
-const oddNumber = (array1) => {
-    let newArr = []
-        for(let i = 0; i < array1.length; i++) {
-            if(array1[i] % 2 !== 0) {
-                newArr.push(array1[i])
-         }
-              }
-              return newArr
-}
-    console.log(oddNumber(testArr2))
+
+// // // --> [9, 27, 45, 12, 30]
+// // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13];
+
+// //psuedo code
+// //function: Declare a function name oddNumber
+// //parameter: array1
+// //for loop: modulo 
+// //expected output: [0, -7, 3, 13]
+
+// const oddNumber = (array1) => {
+//     let newArr = []
+//         for(let i = 0; i < array1.length; i++) {
+//             if(array1[i] % 2 !== 0) {
+//                 newArr.push(array1[i])
+//          }
+//               }
+//               return newArr
+// }
+//     console.log(oddNumber(testArr2))
 
 // // --> [-7, 3, 5, 13]
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
- var comboArr 
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k",
-// ];
+
+//Psuedocode: 
+// function: array of numbers 
+// Parameter: turning the array to a string 
+// Expected output: to return a string with only letters 
+
+ var comboArr = [
+  7,
+  "n",
+  true,
+  "i",
+  "c",
+  10,
+  "e",
+  -388,
+  "w",
+  3,
+  "o",
+  0,
+  "r",
+  false,
+  "k",
+];
+
+const myLetters = (array) => {
+    let newString = [] 
+    for(let i=0; i<array.length; i++) {
+
+    }
+}
+
+
+
+
+
+
+
+
+
 // // --> "nicework"
 // Create a function that takes in an array of numbers and returns the sum.
 // var addThese1 = [1, 2, 3, 4];
