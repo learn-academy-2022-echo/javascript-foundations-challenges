@@ -79,17 +79,17 @@ console.log(scramble(comboArr))
 
 var addThese1 = [1, 2, 3, 4];
 // --> 10
-    const numAdd = (array) => {
-        let sumArr = []
-        let sum = 0
-        for (let i = 0; i < array.length; i++) {
-            sumArr.push(sum += array[i])
-        } return sumArr
+var addThese2 = [];
 
+    const numAdd = (array) => {
+        let sumArr = 0
+        for (let i = 0; i < array.length; i++) {
+           (sumArr += array[i]);
+        } return sumArr
     }   
     console.log(numAdd(addThese1))
+    console.log(numAdd(addThese2))
 
-var addThese2 = [];
 // // --> 0
 
 
