@@ -36,30 +36,63 @@ console.log(numbersOdd(testArr2));
 
 
 // // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// var comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k",
-// ];
-// // --> "nicework"
-// Create a function that takes in an array of numbers and returns the sum.
-// var addThese1 = [1, 2, 3, 4];
-// // --> 10
+// psuedo code:
+//  function: function named scramble
+//  input/parameters: numbers and letters
+//  output: --> "nicework"
 
-// var addThese2 = [];
+ 
+
+var comboArr = [
+  7,
+  "n",
+  true,
+  "i",
+  "c",
+  10,
+  "e",
+  -388,
+  "w",
+  3,
+  "o",
+  0,
+  "r",
+  false,
+  "k",
+];
+// --> "nicework"
+
+const scramble = (array) => {
+    let comboNew = []
+    for (let i = 0; i < array.length; i++) {
+        if(typeof array[i] === "string")
+        comboNew.push(array[i]);
+    } return comboNew.join("");
+ }
+console.log(scramble(comboArr))
+
+
+// Create a function that takes in an array of numbers and returns the sum.
+// function: declare name as numSum
+// input/parameters: numbers in array
+// expected output: 10, 0
+
+var addThese1 = [1, 2, 3, 4];
+// --> 10
+    const numAdd = (array) => {
+        let sumArr = []
+        let sum = 0
+        for (let i = 0; i < array.length; i++) {
+            sumArr.push(sum += array[i])
+        } return sumArr
+
+    }   
+    console.log(numAdd(addThese1))
+
+var addThese2 = [];
 // // --> 0
+
+
 // // Create a function that takes in an array of numbers and returns the index of the largest number.
 // var indexHighestNumber = [1, 4, 2, 3];
 // // --> 1
