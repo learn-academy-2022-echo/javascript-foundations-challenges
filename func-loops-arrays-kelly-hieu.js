@@ -20,7 +20,7 @@
 
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
-var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13];
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13];
 // // --> [-7, 3, 5, 13]
 
     //PSEUDO CODE:
@@ -82,15 +82,56 @@ var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13];
     // }
     // console.log(stringFromArr(comboArr));
 
-// Create a function that takes in an array of numbers and returns the sum.
-// var addThese1 = [1, 2, 3, 4];
-// // --> 10
 
-// var addThese2 = [];
+
+// Create a function that takes in an array of numbers and returns the sum.
+//  var addThese1 = [1, 2, 3, 4];
+// // // --> 10
+
+//     // PSEUDO CODE
+//     // create a function named returnedSum that takes in an array
+//     // create a for loop
+//     // return the array values
+
+//     const returnedSum = (array) => {
+//         let addedNumber = 0
+//         for (let i = 0; i < array.length; i++) {
+//             addedNumber += array[i]
+//         } return addedNumber
+//     }
+//     console.log(returnedSum(addThese1))
+
+
+//  var addThese2 = [];
 // // --> 0
+
+
+
 // Create a function that takes in an array of numbers and returns the index of the largest number.
-// var indexHighestNumber = [1, 4, 2, 3];
-// // --> 1
+ var indexHighestNumber = [1, 4, 2, 3, 19];
+// --> 1
+
+    // PSEUDO CODE:
+    // create a function named indexOfLargestNum takes in an array and returns the index of largest number
+    // create a variable called largestNum that holds the largest number and starts at 0
+    // create a variable for the index number
+    // create a for loop that iterates through the array of numbers
+    // if array value > largestNum, largestNum = new array value
+    // return index of largestNum in indexHighestNumber array
+
+
+    // const indexOfLargestNum = (array) => {
+    //     let largestNum = 0;
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (array[i] > largestNum) {
+    //             largestNum = array[i]
+    //         }
+    //     } return array.indexOf(largestNum)
+    // }
+    // console.log(indexOfLargestNum(indexHighestNumber))
+
+
+
 // STRETCH Challenges
 
 // Create a function that takes in two arrays and returns one array with no duplicate values.
