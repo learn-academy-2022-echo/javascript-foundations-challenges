@@ -33,13 +33,25 @@ const onlyOdd = (value) => {
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
 
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"];
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"];
 
+const letters = comboArr.filter((value) => {
+    return typeof value === "string"
+})
+console.log(letters.join(""));
 
 // // --> "nicework"
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0];
-// // --> [58, "abcd", true]
+
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0];
+// --> [58, "abcd", true]
+
+// Create a function to take in an array
+// Filter method to return a subest of original array
+// 
+
+
 // STRETCH Challenges
 
 // Create a function that takes in a string and returns a new string with all the vowels removed.
