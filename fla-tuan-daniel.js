@@ -102,7 +102,8 @@ var indexHighestNumber = [1, 4, 2, 3];
 // iterate over array
     // if array[i] > largestNum
             // largestNum = array[i]
-// return indexOf largestNum
+// create new variable called indexOfLargest set to arr.indexOf(largestNum)
+// return indexOfLargest variable
 
 const largestNumFunc = (arr) => {
     let largestNum = arr[0];
@@ -152,6 +153,12 @@ var arrayLength = 6;
 var arrayValue = 0;
 // // --> [0, 0, 0, 0, 0, 0]
 
+//create function that takes in two numbers
+// create empty result array
+// iterate over first number
+    // push second number into result array
+// return result
+
 
 const firstNumFunc = (num1, num2) => {
     let result = [];
@@ -181,6 +188,12 @@ var addUp2 = 10;
 
 var addUp3 = 600;
 // // --> 180300
+
+// Create function that takes in a number as argument
+// create sum variable with a value of 0;
+// iterate until i = num
+    // add sum to i
+// return sum
 
 const addFunc = (num) => {
     let sum = 0;
