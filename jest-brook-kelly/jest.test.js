@@ -50,6 +50,8 @@ return  string === "Stressed" ? "Relax": "Keep Working"
 
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
+
+
 // Write the function that will make the test pass.
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
 // Write the function that will make the test pass.
