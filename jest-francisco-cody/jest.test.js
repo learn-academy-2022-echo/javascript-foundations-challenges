@@ -72,14 +72,10 @@ describe("smallOnly", () => {
     let numberOne = 10 
     let numberTwo = 15
   it("compares numbers and returns smaller number",() => {
-   
     expect(smallOnly(numberOne, numberTwo)).toEqual(numberOne)
 
 })
 })
-  
-
-
 
 // Write the function that will make the test pass.
 // pseudo:
@@ -87,9 +83,9 @@ describe("smallOnly", () => {
 // input - takes two numbers
 // output - returns smaller number
 // use a conditional to compare the two variables using less than operator\
-    // if the first number is smaller than the second number
-    // return first number
-    // else return second number
+// if the first number is smaller than the second number
+// return first number
+// else return second number
 let numberOne = 10
 let numberTwo = 15
 
@@ -101,7 +97,30 @@ const smallOnly = ()=>{
     }
 }
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd.
+
+describe("oddNum", () => {
+    let number = 7
+    it("returns if number is odd or not", () => {
+        expect(oddNum(number)).toEqual("odd")
+    })
+})
+
 // Write the function that will make the test pass.
+
+// Psuedo code:
+// Declare function named odd
+// Input: take in a number
+// Output: the string "odd"
+    // using if statement to determine if number % 2 does not equal 0 then return when number is odd return the string "odd"
+
+    let number = 7
+    const oddNum = (number) => {
+        if(number % 2 !== 0){
+            return "odd"
+        }
+    }
+    
+
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
 // Write the function that will make the test pass.
 // Write the test for a function called rick that returns "Morty".
