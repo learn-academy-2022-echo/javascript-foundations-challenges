@@ -1,5 +1,7 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
 
+
+
 describe("wantCofee", () => {
     it ("create a string that returns drink coffee if tired and keep working if not tired",() => {
         expect(wantCofee("yes")).toEqual("drink coffee")
@@ -47,9 +49,57 @@ const stressed = (string) => {
 }
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
+
+describe("budget", () => {
+    it ("returns in budget if lower than $300" ,() => {
+        expect(budget(value)).toEqual("in budget")
+    })
+})
 // Write the function that will make the test pass.
+// pseudo: 
+//declare function named budget
+//input- a number less than $300
+//output- if less than $300 return in budget
+var value = 100
+const budget = (value) => {
+    if(value < 300){
+        return "in budget"
+    } 
+}
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+
+describe("smallOnly", () => {
+    let numberOne = 10 
+    let numberTwo = 15
+  it("compares numbers and returns smaller number",() => {
+   
+    expect(smallOnly(numberOne, numberTwo)).toEqual(numberOne)
+
+})
+})
+  
+
+
+
 // Write the function that will make the test pass.
+// pseudo:
+// declare a function named smallOnly
+// input - takes two numbers
+// output - returns smaller number
+// use a conditional to compare the two variables using less than operator\
+    // if the first number is smaller than the second number
+    // return first number
+    // else return second number
+let numberOne = 10
+let numberTwo = 15
+
+const smallOnly = ()=>{
+    if(numberOne < numberTwo){
+        return numberOne
+    } else {
+        return numberTwo
+    }
+}
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd.
 // Write the function that will make the test pass.
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
