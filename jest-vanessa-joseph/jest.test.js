@@ -46,25 +46,44 @@
 // Write the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 
-describe("inBudget", () => {
+describe("canAfford", () => {
     it("returns in budget or not in budget based on input", () => {
-        expect(inBudget("< 300")).toEqual("in budget");
-        expect(inBudget(">= 300")).toEqual("not in budget")
+        expect(canAfford("<300")).toEqual("in budget");
+        expect(canAfford(">=300")).toEqual("not in budget")
     })
 })
 
-const inBudget =(string) => {
+const canAfford =(string) => {
     if (string === "<300") {
         return "in budget";
     } else if (string ===">=300"){
         return "not in budget";
     }
 }
-    console.log(inBudget("200"))
-    console.log(inBudget("399"))
+    console.log(canAfford("200"))
+    console.log(canAfford("399"))
 
 // Write the function that will make the test pass.
-// Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+// Write the test for a function that takes in two arguments(numbers) and returns the smaller number. 
+// PC: Write out test description & run test
+    // create function called mini, argument has two values, use math.min to determine smaller value 
+    // input: numbers
+    // output: return smaller number of two 
+
+
+    describe("mini", () => {
+        it("returns smaller of two numbers", () => {
+            expect(mini(21, 89)).toEqual(21);
+            expect(mini(100, 34)).toEqual(34);
+        })
+    })
+
+    const mini = (num1, num2) => {
+        return Math.min(num1, num2);
+    }   
+
+    // math.min took the place of conditionals
+
 // Write the function that will make the test pass.
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd.
 // Write the function that will make the test pass.
