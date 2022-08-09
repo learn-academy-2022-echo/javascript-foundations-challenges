@@ -4,33 +4,33 @@
 // IMPORTANT: You do not need to comment out the old tests or functions. The purpose of tests are to be AUTOMATED. Commenting them out defeats that purpose.
 
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-    // describe("coffee", () => {
-    //     it("takes a string, logs whether or not you're tired", () => {
-    //         expect(coffee("yes")).toEqual("drink coffee")
-    //         expect(coffee("no")).toEqual("keep working")
-    //     })
-    // })
+    describe("coffee", () => {
+        it("takes a string, logs whether or not you're tired", () => {
+            expect(coffee("yes")).toEqual("drink coffee")
+            expect(coffee("no")).toEqual("keep working")
+        })
+    })
 
 // Write the function that will make the test pass.
-    // const coffee = (string) => {
-    //     if (string === "yes") {
-    //         return "drink coffee"
-    //     } else {
-    //         return "keep working"
-    //     }
-    // }
+    const coffee = (string) => {
+        if (string === "yes") {
+            return "drink coffee"
+        } else {
+            return "keep working"
+        }
+    }
 
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
     //describe method - takes a string parameter that gives the name of the function and a callback function
-    // describe("stressed", () => {
-    //     // it method takes a string that describes what the test is doing AND a callback method
-    //     it("returns string 'relaxed' if stressed OR 'keep going' if not stressed", () => {
-    //         // within callback functino of it method, have the expect statement
-    //         expect(stressed("yes")).toEqual("relax")
-    //         expect(stressed("no")).toEqual("keep going")
-    //     })
-    // })
+    describe("stressed", () => {
+        // it method takes a string that describes what the test is doing AND a callback method
+        it("returns string 'relaxed' if stressed OR 'keep going' if not stressed", () => {
+            // within callback functino of it method, have the expect statement
+            expect(stressed("yes")).toEqual("relax")
+            expect(stressed("no")).toEqual("keep going")
+        })
+    })
 
 // Write the function that will make the test pass.
     // PSEUDOCODE
@@ -38,13 +38,13 @@
     // input/parameter - none
     // expected output/outcome - a string that says "relax" OR "keep going"
 
-    // const stressed = (string) => {
-    //     if (string === "yes") {
-    //         return "relax"
-    //     } else {
-    //         return "keep going"
-    //     }
-    // }
+    const stressed = (string) => {
+        if (string === "yes") {
+            return "relax"
+        } else {
+            return "keep going"
+        }
+    }
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Write the function that will make the test pass.
