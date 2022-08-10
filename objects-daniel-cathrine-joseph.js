@@ -127,28 +127,56 @@ const pokeTwo = {
   species: "Magikarp",
   pokemon_type: "Water",
 };
+
 // Create a function called describePokemon that take an object like the ones above and uses destructuring to return a description of the Pokemon so that the following code snippet will run successfully:
-// console.log(describePokemon(pokeOne));
+const describePokemon = (arr) => {
+  return `${arr.species} is a ${arr.pokemon_type} pokemon.`
+}
+console.log(describePokemon(pokeOne));
 // // Output: "Charmandar is a Fire pokemon"
-// console.log(describePokemon(pokeTwo));
+
+console.log(describePokemon(pokeTwo));
 // // Output: "Magikarp is a Water pokemon"
+
+
 // Consider this variable:
 
 // const triangleDimensions = {
 //   base: 2,
 //   height: 5,
 // };
+
 // Modify the triangleDimensions object to have a method that returns the area of the triangle.
-// Write the code that will update the base to be the value of 6.
+
+// NEED HELP
+// const area = (arr) => {
+//   return (arr.base * arr.height)
+// }
+// // console.log(area(triangleDimensions))
+
+// // Write the code that will update the base to be the value of 6.
+
+// const triangleDimensions = {
+//   base: numOne,
+//   height: numTwo,
+// };
+
+// const { numOne, numTwo } = triangleDimensions
+
+// console.log(area(triangleDimensions))
+
+
 // Consider this variable:
 
-// const learn = {
-//   cohorts: {
-//     2021: ["Alpha", "Bravo", "Charlie", "Delta", "Echo"],
-//     2022: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
-//   },
-// };
+const learn = {
+  cohorts: {
+    2021: ["Alpha", "Bravo", "Charlie", "Delta", "Echo"],
+    2022: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
+  },
+};
 // Write the code that logs the name of your cohort.
+console.log(learn.cohorts.2022)
+
 // Write the code that uses destructuring to log the name of your cohort.
 // Create a function that takes an object like the one above and returns an array with a string of every cohort name and year.
 // // Output: ["2021 Alpha", "2021 Bravo", "2021 Charlie", "2021 Delta", "2021 Echo", "2022 Alpha", "2022 Bravo", "2022 Charlie", "2022 Delta", "2022 Echo", "2022 Foxtrot"]
