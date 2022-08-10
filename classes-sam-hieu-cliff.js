@@ -60,12 +60,39 @@ class LatteMaker {
 
 }
 // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
-const singleLatte = new LatteMaker('regular', 'normal', 1)
-console.log(singleLatte.latteProfile())
+// const singleLatte = new LatteMaker('regular', 'normal', 1)
+// console.log(singleLatte.latteProfile())
 
 // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
 
+// const doubleShot = new LatteMaker('hazelnut','almond milk', 2 )
+// console.log(doubleShot.latteProfile())
+
 // Volume of a Cylinder
+
 // Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
 
+class Volume {
+  constructor(radius, height) {
+    this.radius = radius;
+    this.height = height;
+  } 
+  theVolume() {
+    return (Math.PI * (this.radius ** 2) * this.height).toFixed(4)
+  }
+}
+const dowel = new Volume(3, 4);
+console.log(dowel.theVolume())
+
+
 // Write the code that creates three unique cylinder objects
+
+const plumbingPipe = new Volume(35, 12);
+const drinkingStraw = new Volume(1, 2);
+const waterTank = new Volume(1235234, 6509835);
+
+console.log(plumbingPipe.theVolume())
+console.log(drinkingStraw.theVolume())
+console.log(waterTank.theVolume())
+
+console.log("All 3 Volumes", plumbingPipe.theVolume(), drinkingStraw.theVolume(), waterTank.theVolume())
