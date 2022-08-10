@@ -58,8 +58,6 @@ class LatteMaker {
         }
       }
 
-
-
 }
 // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
 const singleLatte = new LatteMaker('regular', 'normal', 1)
