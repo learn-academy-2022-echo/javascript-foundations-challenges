@@ -32,23 +32,68 @@ const person = {
 
 //   Consider this variable:
   
+  // const product = {
+  //   name: "chair",
+  //   price: 24.99,
+   
+
+  // };
+
+ //Another way to do it
+//  console.log(product.name);
+//  console.log(product.price);
+//  console.log(`The product is ${product.name}. It costs ${product.price}`)
+
+//   Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
+
 //   const product = {
 //     name: "chair",
 //     price: 24.99,
+//     describeProduct: function () {
+//       return `The product is ${this.name}. It costs ${this.price}`
+//     }
+
 //   };
-//   Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
+
+//  console.log(product.describeProduct())
+
 //   Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
+
+ 
+//   const product = {
+//     name: "chair",
+//     price: 24.99,
+//    totalWithTax: function () {
+//     return (this.price * .07 + this.price).toFixed(2)
+//    }
+
+//   };
+// console.log(product.totalWithTax())
+
+
+
 //   Consider this variable:
   
-//   const lunch = {
-//     name: "PB and Banana",
-//     type: "sandwich",
-//     ingredients: ["bread", "peanut butter", "banana"],
-//   };
+  const lunch = {
+    name: "PB and Banana",
+    type: "sandwich",
+    ingredients: ["bread", "peanut butter", "banana"],
+  };
 //   Write the code that accesses the ingredients property.
+
+console.log(lunch.ingredients)
 //   Write the code that access the third ingredient of the lunch object.
+console.log(lunch.ingredients[2])
 //   Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+const makePB = () => {
+  return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients[0]}, ${lunch.ingredients[1]}, and ${lunch.ingredients[2]}.`
+}
+console.log(makePB(lunch))
 //   Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+console.log()
+
+
+
 //   Consider this variable:
   
 //   const animals = [
