@@ -56,7 +56,7 @@ class Latte {
 // Write a method for your Latte class that outputs the latte's profile.
 
 latteProfile() {
-    return `A ${this.flavor} latte with ${this.milkType}, and ${this.shotNumber} shot`;
+    return `A ${this.flavor} latte with ${this.milkType}, and ${this.shots()}`;
   }
 
 // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
@@ -76,10 +76,43 @@ shots () {
 
 
 // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
+var kindOfLatte = new Latte ("hazelnut", "almond milk", 2)
+
+console.log(kindOfLatte.latteProfile())
 
 // Volume of a Cylinder
 
 // Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
 
-// Write the code that creates three unique cylinder objects
+class Cylinder { 
+constructor(pie, r, h){
+  this.pie = 3.14159
+  this.r = r
+  this.h = h
+} 
+volume () {
+  return `${this.pie}` * (`${this.r}` * `${this.r}`) * `${this.h}`
+}
+}
 
+// Write the code that creates three unique cylinder objects
+var volumeOne = new Cylinder (this.pie, 10, 5)
+var volumeTwo = new Cylinder (this.pie, 15, 10 )
+var volumeThree = new Cylinder (this.pie, 20, 15 )
+
+console.log(volumeOne.volume())
+console.log(volumeTwo.volume())
+console.log(volumeThree.volume())
+
+// class ClassName{
+//   constructo(value(s)){
+//     this.objectName = object value
+//     this.objectName = object value
+//     this.objectName = object value
+//   }
+//   // method function(s)
+//   functionName (){
+//     return `whatever you want to return`
+//   }
+// }
+// variableName = new ClassName (value(s))
