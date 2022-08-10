@@ -105,24 +105,28 @@ console.log(animalSentence(animals))
 
 // Consider this variable:
 
-// const author = {
-//   name: "H. G. Wells",
-//   genre: "science fiction",
-// };
+const author = {
+  name: "H. G. Wells",
+  genre: "science fiction",
+};
+
+
 // Write the code that destructures the author object so that the following code snippet will run successfully:
-// console.log(`${name} is a ${genre} author`);
+const {name,genre} = author
+console.log(`${name} is a ${genre} author`);
 // // Output: "H. G. Wells is a science fiction author"
+
 // Consider this variable:
 
-// const pokeOne = {
-//   species: "Charmandar",
-//   pokemon_type: "Fire",
-// };
+const pokeOne = {
+  species: "Charmandar",
+  pokemon_type: "Fire",
+};
 
-// const pokeTwo = {
-//   species: "Magikarp",
-//   pokemon_type: "Water",
-// };
+const pokeTwo = {
+  species: "Magikarp",
+  pokemon_type: "Water",
+};
 // Create a function called describePokemon that take an object like the ones above and uses destructuring to return a description of the Pokemon so that the following code snippet will run successfully:
 // console.log(describePokemon(pokeOne));
 // // Output: "Charmandar is a Fire pokemon"
