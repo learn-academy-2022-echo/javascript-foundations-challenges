@@ -47,10 +47,10 @@ class LatteMaker {
 
 // Write a method for your Latte class that outputs the latte's profile.
     latteProfile() {
-        return `This is a ${this.flavor} latte, it's made with ${this.milkType} milk, and has ${this.shotNum()} ` // PROBLEM
+        return `This is a ${this.flavor} latte, it's made with ${this.milkType} milk, and has ${this.shotNums()} ` 
     }
 
-    shotNum() {
+    shotNums() {
         if (this.shotNum > 1) {
           return `${this.shotNum} shots`;
         } else {
