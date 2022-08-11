@@ -74,12 +74,12 @@
 
 // Consider this variable:
 
-const animals = [
-  { name: "Waffles", type: "dog", age: 7 },
-  { name: "Fluffy", type: "cat", age: 14 },
-  { name: "Spelunky", type: "dog", age: 4 },
-  { name: "Hank", type: "cat", age: 11 },
-];
+// const animals = [
+//   { name: "Waffles", type: "dog", age: 7 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 },
+// ];
 
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
 
