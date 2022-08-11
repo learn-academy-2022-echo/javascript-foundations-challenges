@@ -98,13 +98,31 @@ const animals = [
 //input: an array of objects 
 //output: a new array with only objects that are cats 
 //use the filter method
-const catsOnly = (pets) => {
-    return pets.filter(value => value.type === "cat")
-}
-console.log(catsOnly(animals));
-
+// const catsOnly = (pets) => {
+//     return pets.filter(value => value.type === "cat")
+// }
+// console.log(catsOnly(animals));
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+//Pseudocode: write a function called animalNames 
+//input:  an array of animal objects
+//output: an array with only the animal names 
+const animalNames = (pets) => {
+    return pets.map(value => value.name)
+}
+// console.log(animalNames(animals));
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+//Pseudocode: write a function called oldPets 
+//input: array of animal objects
+//output: array of animal names for animals that are older than 10
+const oldPets = (pets) => {
+    const seniorPets = pets.filter(value => value.age > 10 )
+    const seniorNames = seniorPets.map(value => value.name)
+    return seniorNames
+} 
+   
+
+console.log(oldPets(animals));
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 
